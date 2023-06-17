@@ -1,0 +1,4 @@
+export const RIGHT_PANEL_ENUM = {
+  NODES_PANEL: 1,
+  SETTINGS_PANEL: 2,
+};

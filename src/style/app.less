@@ -1,0 +1,79 @@
+.App {
+  height: 100vh;
+}
+.app-area {
+  height: 100vh;
+}
+
+.header {
+  background-color: var(--primary-color);
+  button {
+    background-color: white !important;
+    font-weight: 600;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.partition-left {
+  flex: calc(100% - var(--sidepanel-width));
+}
+.partition-right {
+  flex: var(--sidepanel-width);
+}
+.workspace {
+  
+  .text-node {
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+    width: 120px;
+    border-radius: 5px;
+
+    .heading {
+      border-radius: 5px 5px 0px 0px;
+      font-size: 6px;
+      background-color: rgb(174, 234, 220);
+      font-weight: 700;
+      padding: 2px;
+
+      img {
+        transform: scale(0.6);
+      }
+    }
+    .text-value {
+      font-size: 6px;
+      padding: 7px;
+      background-color: white;
+      border-radius: 0px 0px 5px 5px;
+    }
+  }
+}
+
+.right-panel {
+  border-left: 3px solid var(--primary-color);
+
+  .nodes-panel {
+    img {
+      transform: scale(1.7);
+      filter: hue-rotate(10deg);
+    }
+    button {
+      width: 130px;
+    }
+  }
+
+  .settings-panel {
+    .heading {
+      border-bottom: 3px solid var(--primary-color);
+    }
+    .text-area {
+      border-bottom: 3px solid var(--primary-color);
+
+      .text-heading {
+        color: grey;
+        font-size: 15px;
+      }
+    }
+  }
+}
