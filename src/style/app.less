@@ -26,7 +26,7 @@
 .workspace {
   
   .text-node {
-    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 8px 1px rgba(49, 49, 49, 0.3);
     width: 120px;
     border-radius: 5px;
 
@@ -35,10 +35,26 @@
       font-size: 6px;
       background-color: rgb(174, 234, 220);
       font-weight: 700;
-      padding: 2px;
+      padding-left: 3px;
+      padding-right: 3px;
+      white-space: nowrap;
 
       img {
         transform: scale(0.6);
+      }
+
+      .pin-icon {
+        transform: scale(0.8);
+        background-color: white;
+        border-radius: 50%;
+        height: 6px;
+        width: 6px;
+        padding: 1.2px;
+        display: flex;
+        img {
+          filter: invert(57%) sepia(100%) saturate(1641%) hue-rotate(86deg) brightness(102%) contrast(98%);
+          transform: rotate(45deg);
+        }
       }
     }
     .text-value {
@@ -56,7 +72,7 @@
   .nodes-panel {
     img {
       transform: scale(1.7);
-      filter: hue-rotate(10deg);
+      filter: invert(60%) sepia(65%) saturate(5231%) hue-rotate(193deg) brightness(97%) contrast(89%);
     }
     button {
       width: 130px;
@@ -64,16 +80,32 @@
   }
 
   .settings-panel {
+    font-weight: 500;
     .heading {
+      font-size: 14px;
       border-bottom: 3px solid var(--primary-color);
     }
     .text-area {
       border-bottom: 3px solid var(--primary-color);
 
       .text-heading {
-        color: grey;
-        font-size: 15px;
+        color: rgb(169, 168, 168);
+        font-size: 13.5px;
+      }
+      textarea {
+        font-size: px;
       }
     }
   }
+}
+
+.selected-node {
+  border: 0.3px solid rgb(127, 131, 254);
+  border-radius: 5px;
+  transition: border 200ms;
+}
+
+.unselected-node {
+  border: 0.3px solid transparent;
+  border-radius: 5px;
 }

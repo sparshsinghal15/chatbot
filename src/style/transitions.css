@@ -1,0 +1,20 @@
+.component-enter {
+    opacity: 0;
+    transform: translateX(-10%);
+}
+.component-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.component-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.component-exit-active {
+    opacity: 0;
+    transform: translateX(-10%);
+}
+.component-enter-active,
+.component-exit-active {
+    transition: opacity 200ms, transform 200ms;
+}
